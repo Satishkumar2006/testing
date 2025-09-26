@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Development Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="text-slate-300">
+
+    <header id="dashboard-header" class="fixed top-0 left-0 right-0 z-50 bg-slate-900/60 backdrop-blur-lg border-b border-slate-300/10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <h2 class="text-lg font-bold text-slate-200">Welcome, User!</h2>
+                <div class="relative">
+                    <button id="profile-button" class="flex items-center justify-center h-11 w-11 bg-slate-700 rounded-full text-indigo-300 font-bold hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-indigo-500">
+                        U
+                    </button>
+                    <div id="profile-dropdown" class="profile-dropdown absolute right-0 mt-2 w-48 bg-slate-800 rounded-lg shadow-xl py-1 ring-1 ring-slate-300/10">
+                        <a href="#" class="block px-4 py-2 text-sm text-slate-300 hover:bg-slate-700">My Career</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-slate-300 hover:bg-slate-700">Modules Completed</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-slate-300 hover:bg-slate-700">Settings</a>
+                        <div class="border-t border-slate-300/10 my-1"></div>
+                        <a href="#" class="block px-4 py-2 text-sm text-red-400 hover:bg-slate-700">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-indigo-300 mb-4 tracking-tight">Forge Your Tech Career</h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">Select a company to architect your personalized roadmap and secure your dream role.</p>
+        </header>
+
+        <main class="w-full max-w-5xl">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="role.html?company=google" class="company-card block p-0">
+                    <div class="card-content flex flex-col items-center justify-center p-6 h-full">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" class="h-14 w-14 mb-4">
+                        <h2 class="text-2xl font-semibold text-slate-100">Google</h2>
+                        <p class="text-slate-400 mt-1">Search, Ads, Cloud & more</p>
+                    </div>
+                </a>
+
+                <a href="role.html?company=meta" class="company-card block p-0">
+                    <div class="card-content flex flex-col items-center justify-center p-6 h-full">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png" alt="Meta Logo" class="h-14 w-14 mb-4 object-contain">
+                        <h2 class="text-2xl font-semibold text-slate-100">Meta</h2>
+                        <p class="text-slate-400 mt-1">Social, VR, & the Metaverse</p>
+                    </div>
+                </a>
+
+                <a href="role.html?company=zoho" class="company-card block p-0">
+                    <div class="card-content flex flex-col items-center justify-center p-6 h-full">
+                        <img src="th.webp" alt="Zoho Logo" class="h-14 w-14 mb-4 object-contain logo-img-invert">
+                        <h2 class="text-2xl font-semibold text-slate-100">Zoho</h2>
+                        <p class="text-slate-400 mt-1">Business & Productivity Suite</p>
+                    </div>
+                </a>
+
+                <a href="role.html?company=microsoft" class="company-card block p-0">
+                    <div class="card-content flex flex-col items-center justify-center p-6 h-full">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" class="h-14 w-14 mb-4">
+                        <h2 class="text-2xl font-semibold text-slate-100">Microsoft</h2>
+                        <p class="text-slate-400 mt-1">OS, Cloud, & Enterprise</p>
+                    </div>
+                </a>
+
+                <a href="role.html?company=amazon" class="company-card block p-0">
+                    <div class="card-content flex flex-col items-center justify-center p-6 h-full">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="h-14 w-14 mb-4 object-contain logo-img-invert">
+                        <h2 class="text-2xl font-semibold text-slate-100">Amazon</h2>
+                        <p class="text-slate-400 mt-1">E-commerce & Web Services</p>
+                    </div>
+                </a>
+
+                <a href="role.html?company=apple" class="company-card block p-0">
+                    <div class="card-content flex flex-col items-center justify-center p-6 h-full">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="h-14 w-14 mb-4 logo-img-invert">
+                        <h2 class="text-2xl font-semibold text-slate-100">Apple</h2>
+                        <p class="text-slate-400 mt-1">Consumer Electronics</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+        
+        <footer class="text-center mt-16 text-slate-500">
+            <p>&copy; 2025 Career Development Hub. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      location="asia-south1"
+      project-id="careerbot-473311"
+      agent-id="1f21ae0c-f7c6-4e48-b3e2-326d14305a33"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat-bubble
+        chat-title="Career-Coach-Bot">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+</body>
+</html>
